@@ -3,7 +3,7 @@ function calcular(){
     console.log(fPeso)
     var fAltura = parseFloat(document.getElementById("altura").value)
     var fIMC = fPeso/(fAltura*fAltura)
-    document.getElementById("imc").innerHTML = fIMC
+    document.getElementById("imc").innerHTML = fIMC.toFixed(2)
     if(fIMC<18.5){
         document.getElementById("STATUS").innerHTML = "STATUS: BAIXO PESO"  
     } else if(fIMC<=24.9){
